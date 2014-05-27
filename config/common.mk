@@ -135,17 +135,9 @@ PRODUCT_PACKAGES += \
 # Custom CM packages
 PRODUCT_PACKAGES += \
     Launcher3 \
-    Trebuchet \
-    DSPManager \
     libcyanogen-dsp \
     audio_effects.conf \
-    CMWallpapers \
-    Apollo \
-    CMFileManager \
-    LockClock \
-    CMUpdater \
-    CMFota \
-    CMAccount
+    CMFileManager 
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
@@ -213,7 +205,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 endif
 
 # easy way to extend to add more packages
--include vendor/extra/product.mk
+include vendor/redmart/products/app/product.mk
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
