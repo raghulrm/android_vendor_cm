@@ -206,6 +206,8 @@ endif
 
 # easy way to extend to add more packages
 include vendor/redmart/products/app/product.mk
+include vendor/google/products/app/product.mk
+include vendor/google/products/priv-app/product.mk
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
